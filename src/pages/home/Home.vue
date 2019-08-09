@@ -21,7 +21,7 @@ export default {
 		HomeSwiper,
 		HomeIcons,
 		HomeRecommend,
-		HomeWeekend
+		HomeWeekend,
 		HomeSwiper
 	}
 }
