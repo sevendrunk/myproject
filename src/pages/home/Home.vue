@@ -2,9 +2,9 @@
   <div>
 		<home-header></home-header>
 		<home-swiper :swiperList="swiperList"></home-swiper>
-		<home-icons></home-icons>
-		<home-recommend></home-recommend>
-		<home-weekend></home-weekend>
+		<home-icons :iconList="iconList"></home-icons>
+		<home-recommend ></home-recommend>
+		<home-weekend :itemList="weekendList"></home-weekend>
 	</div>
 </template>
 
@@ -26,7 +26,9 @@ export default {
 	},
 	data(){
 		return{
-			swiperList:[]
+			swiperList:[],
+			iconList:[],
+			weekendList:[]
 		}
 	},
 	methods:{
@@ -38,7 +40,9 @@ export default {
 			res=res.data
 			if(res.ret&&res.data){
 				const data=res.data
-				this.swiperList=data.swiperList
+				this.swiperList=data.swiperList,
+				this.iconList=data.iconList,
+				this.weekendList=data.weekendList
 			}
 		}
 		},
@@ -49,5 +53,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

@@ -17,28 +17,8 @@
 <script>
 export default{
 	name:'HomeWeekend',
-	data(){
-		return{
-			itemList:[{
-				id:'0001',
-				imgUrl:'static/images/7a0edf873aa4cb02.jpg_r_390x260x90_70d91262.jpg',
-				title:'新疆风景区',
-				desc:'浪漫新疆,净化心灵之地'
-			},
-			{
-				id:'0002',
-				imgUrl:'static/images/7a0edf873aa4cb02.jpg_r_390x260x90_70d91262.jpg',
-				title:'新疆风景区',
-				desc:'浪漫新疆,净化心灵之地'
-			},
-			{
-				id:'0003',
-				imgUrl:'static/images/7a0edf873aa4cb02.jpg_r_390x260x90_70d91262.jpg',
-				title:'新疆风景区',
-				desc:'浪漫新疆,净化心灵之地'
-			}
-			]
-		}
+	props:{
+		itemList:Array
 	}
 }
 </script>

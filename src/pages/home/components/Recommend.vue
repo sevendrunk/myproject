@@ -28,13 +28,13 @@ export default{
 			},
 			{
 				id:'0002',
-				imgUrl:'static/images/7a0edf873aa4cb02.jpg_r_390x260x90_70d91262.jpg',
+				imgUrl:'static/images/recom-1.jpg',
 				title:'大连海洋馆',
 				desc:'浪漫大连,海洋主题乐园'
 			},
 			{
 				id:'0003',
-				imgUrl:'static/images/7a0edf873aa4cb02.jpg_r_390x260x90_70d91262.jpg',
+				imgUrl:'static/images/recom-2.jpg',
 				title:'大连海洋馆',
 				desc:'浪漫大连,海洋主题乐园'
 			}

@@ -15,46 +15,11 @@
 <script>
 export default{
 	name:'HomeIcons',
+	props:{
+		iconList:Array
+	},
 	data(){
 		return{
-			iconList:[{
-				id:'0001',
-				imgUrl:'static/images/flight.png',
-				desc:'机票'
-			},{
-				id:'0002',
-				imgUrl:'static/images/freeTravel.png',
-				desc:'自由行自由行自由行'
-			},{
-				id:'0003',
-				imgUrl:'static/images/package.png',
-				desc:'度假'
-			},{
-				id:'0004',
-				imgUrl:'static/images/kezhan.png',
-				desc:'客栈'
-			},{
-				id:'0005',
-				imgUrl:'static/images/piao.png',
-				desc:'景点门票'
-			},{
-				id:'0006',
-				imgUrl:'static/images/train.png',
-				desc:'火车票'
-			},{
-				id:'0007',
-				imgUrl:'static/images/travel.png',
-				desc:'攻略'
-			},{
-				id:'0008',
-				imgUrl:'static/images/hotel.png',
-				desc:'酒店'
-			},{
-				id:'00009',
-				imgUrl:'static/images/hotel.png',
-				desc:'酒店'
-			}
-			],
 			swiperOption:{
 				autoplay:false
 			}
