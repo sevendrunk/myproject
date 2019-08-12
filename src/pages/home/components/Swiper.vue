@@ -14,20 +14,15 @@
 <script>
   export default {
     name: 'HomeSwiper',
+		props: {
+		  swiperList: Array
+		},
     data() {
       return {
         swiperOption: {
 			pagination:'.swiper-pagination',
 			loop:true
-		},
-		swiperList:[{
-			id:'0001',
-			imgUrl:'static/images/11.jpeg'
-		},{
-			id:'0002',
-			imgUrl:'static/images/9.jpeg'
 		}
-		]
       }
     }
   }

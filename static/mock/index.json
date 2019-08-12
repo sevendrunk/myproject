@@ -1,0 +1,17 @@
+{
+	"ret":true,
+	"data":{
+		"swiperList":[{
+			"id":"0001",
+			"imgUrl":"static/images/11.jpeg"
+		},
+		{
+			"id":"0002",
+			"imgUrl":"static/images/11.jpeg"
+		},{
+			"id":"0003",
+			"imgUrl":"static/images/11.jpeg"
+		}]
+		
+	}
+}
