@@ -5,9 +5,11 @@
 	  </div>
 	  <div class="header-input">
 	  	<span class="iconfont">&#xe63c;</span>输入城市游玩主题</div>
-	  <div class="header-right">
-	  	西安<span class="iconfont arrow-icon">&#xe65c;</span>
-	  </div>
+		<router-link to="/city">
+		  <div class="header-right">
+			西安<span class="iconfont arrow-icon">&#xe65c;</span>
+		  </div>
+		</router-link>
   </div>
 </template>
 
