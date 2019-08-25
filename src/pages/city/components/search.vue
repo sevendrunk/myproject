@@ -3,17 +3,17 @@
 	<div class="search">
 		<input v-model="keyword" type="text" class="input-search" placeholder="输入城市或拼音"/>
 	</div>
-	<div 
+	<div
 		class="search-content"
 		ref="search"
 		v-show="keyword"
 	>
 		<ul>
-			<li class="search-item" v-for="item in list">{{item.name}}</li>
+			<li class="search-item" v-for="item in list" @click="handleClickCity(item.name)">{{item.name}}</li>
 			<li v-show="hasList">没有找到匹配项</li>
 		</ul>
 	</div>
-</div>	
+</div>
 </template>
 
 <script>
@@ -30,6 +30,11 @@ export default{
 			timer:null
 		}
 	},
+  methods:{
+    handleClickCity(city){
+      this.$store.commit('changeCity',city)
+    }
+  },
 	computed:{
 		hasList(){
 			return !this.list.length
