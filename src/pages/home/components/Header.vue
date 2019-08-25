@@ -7,15 +7,19 @@
 	  	<span class="iconfont">&#xe63c;</span>输入城市游玩主题</div>
 		<router-link to="/city">
 		  <div class="header-right">
-			{{this.$store.state.city}}<span class="iconfont arrow-icon">&#xe65c;</span>
+			{{this.city}}<span class="iconfont arrow-icon">&#xe65c;</span>
 		  </div>
 		</router-link>
   </div>
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  computed:{
+    ...mapState(['city'])
+  }
 }
 </script>
 
