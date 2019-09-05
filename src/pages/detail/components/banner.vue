@@ -17,7 +17,6 @@
       v-show="showGallary"
       @close="handleGallaryClose"
       ></common-gallary>
-    <div class="content"></div>
   </div>
 </template>
 
@@ -76,7 +75,4 @@ export default{
          border-radius :.2rem
          .iconfont
            font-size :.24rem
-  .content
-    width: 100%
-    height :18rem
 </style>
