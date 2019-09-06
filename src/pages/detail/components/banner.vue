@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-     <img class="banner-img" src="../../../../static/images/recom-2.jpg"/>
+     <img class="banner-img" :src="bannerImg"/>
     <div class="banner-info">
         <div class="banner-title">
-            海洋世界(AAAA景区)
+            {{this.sightName}}
         </div>
         <div class="banner-number">
           <span class="iconfont">&#xe63c;</span>
@@ -13,7 +13,7 @@
     </div>
     </div>
     <common-gallary
-     :imgs="imgs"
+     :imgs="gallaryImgs"
       v-show="showGallary"
       @close="handleGallaryClose"
       ></common-gallary>
@@ -24,13 +24,14 @@
 import CommonGallary from '@/.././common/gallary/Gallary.vue'
 export default{
   name:'DetailBanner',
+  props:{
+    sightName:String,
+    bannerImg:String,
+    gallaryImgs:Array
+  },
   data(){
     return{
-        showGallary:false,
-        imgs:[
-          'static/images/7.jpeg',
-          'static/images/11.jpeg'
-        ]
+        showGallary:false
     }
   },
   components:{
